@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACS HSC 27 Final Revision Batch (FRB 27)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #333;
+            display: flex;
+            justify-content: center;
+        }
+        .phone-container {
+            width: 100%;
+            max-width: 412px;
+            background-color: #fff;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+        }
+        .browser-header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 10px 15px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #333;
+        }
+        .browser-title {
+            text-align: center;
+            flex-grow: 1;
+        }
+        .browser-title div:first-child {
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .browser-title div:last-child {
+            font-size: 10px;
+            color: #aaa;
+        }
+        .main-content {
+            padding: 15px;
+            flex-grow: 1;
+            background: #fff;
+        }
+        .brand {
+            color: #2563eb;
+            font-weight: bold;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+        .course-title {
+            font-size: 24px;
+            font-weight: 800;
+            text-align: center;
+            margin: 10px 0 20px 0;
+            color: #1e293b;
+            line-height: 1.3;
+        }
+        .banner-box {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            border-radius: 12px;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .banner-tag {
+            background: #0284c7;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .banner-heading {
+            font-size: 26px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            margin: 10px 0;
+            border-top: 2px solid rgba(255,255,255,0.2);
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+            padding: 10px 0;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .info-card {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid #e2e8f0;
+        }
+        .info-icon {
+            font-size: 24px;
+        }
+        .info-text div:first-child {
+            font-size: 12px;
+            color: #64748b;
+        }
+        .info-text div:last-child {
+            font-size: 15px;
+            font-weight: bold;
+            color: #334155;
+        }
+        .live-class-bar {
+            background: #fef2f2;
+            border: 1px solid #fee2e2;
+            border-radius: 8px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #dc2626;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background: #dc2626;
+            border-radius: 50%;
+        }
+        .price-section {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .price-old {
+            color: #dc2626;
+            text-decoration: line-through;
+            margin-right: 15px;
+        }
+        .price-new {
+            color: #16a34a;
+        }
+        .coupon-box {
+            background: #f0fdf4;
+            border: 1px dashed #16a34a;
+            border-radius: 8px;
+            padding: 12px;
+            color: #15803d;
+            font-size: 13px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .book-option {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            accent-color: #16a34a;
+        }
+        .enroll-btn {
+            background: #16a34a;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 4px 6px rgba(22, 163, 74, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="phone-container">
+        <div class="browser-header">
+            <span>✕</span>
+            <div class="browser-title">
+                <div>ACS HSC 27 Fi...</div>
+                <div>aparsclassroom.com</div>
+            </div>
+            <span>⋮</span>
+        </div>
+        
+        <div class="main-content">
+            <div class="brand">🛒 ASG Shop</div>
+            <div class="course-title">ACS HSC 27 Final Revision Batch (FRB 27)</div>
+            
+            <div class="banner-box">
+                <div class="banner-tag">ACS HSC 27</div>
+                <div style="font-size: 14px; opacity: 0.9;">INSTRUCTORS TEAM</div>
+                <div class="banner-heading">FINAL REVISION BATCH</div>
+                <div style="font-size: 12px; opacity: 0.8;">( WITH FULL SYLLABUS ARCHIVE )</div>
+            </div>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <span class="info-icon">👥</span>
+                    <div class="info-text">
+                        <div>কোর্সটি করছেন</div>
+                        <div>16,811 জন</div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <span class="info-icon">🕒</span>
+                    <div class="info-text">
+                        <div>ক্লাস শুরু</div>
+                        <div>১ নভেম্বর, ২০২৬</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="live-class-bar">
+                <div class="live-dot"></div>
+                Live Classes
+            </div>
+            
+            <div class="price-section">
+                Price : <span class="price-old">10000৳</span><span class="price-new">8000৳</span>
+            </div>
+            
+            <div class="coupon-box">
+                ✅ "FRB27WBOOKS" coupon applied – 500৳ discount (till 10th November, 2026)
+            </div>
+            
+            <div class="book-option">
+                <input type="checkbox" class="checkbox" checked disabled>
+                <span>Add Books (+3000 TK) 🏠<br><small style="color: #64748b; font-weight: normal;">(Delivery Charge included)</small></span>
+            </div>
+            
+            <button class="enroll-btn">
+                কোর্সটিতে এনরোল করো ➔
+            </button>
+        </div>
+    </div>
+</body>
+</html>
